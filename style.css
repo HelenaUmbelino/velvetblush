@@ -1,0 +1,40 @@
+/* Estilos globais para as fontes e cores de fundo */
+body {
+    font-family: 'DM Mono', monospace; /* Aplica a fonte do corpo do texto */
+    background-color: #F7E5EC; /* Fundo branco meio rosado original */
+    color: #333; /* Cor do texto para contrastar com o fundo claro */
+}
+
+h1, h2, h3, .font-heading {
+    font-family: 'Space Mono', monospace; /* Aplica a fonte de títulos */
+}
+
+/* Estilo para ocultar páginas (mantido para compatibilidade, embora não usado na navegação de múltiplas páginas) */
+.page-content {
+    display: none;
+}
+
+/* Estilo para mostrar a página ativa (mantido para compatibilidade) */
+.page-content.active {
+    display: block;
+}
+
+/* Cores de texto para elementos que precisam de contraste em fundos claros */
+.text-dark-contrast {
+    color: #333; /* Cor de texto padrão para contraste */
+}
+
+.text-medium-contrast {
+    color: #666; /* Cor de texto médio para menos proeminência */
+}
+
+/* Borda para elementos no modo claro */
+.border-light-mode {
+    border-color: #D1D5DB; /* Cor de borda padrão do Tailwind gray-300 */
+}
+
+/* Placeholder para inputs no modo claro */
+.placeholder-light-mode::placeholder {
+    color: #9CA3AF; /* Cor de placeholder padrão do Tailwind gray-400 */
+}
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Blush - Produtos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'velvet-pink': '#B84A6A',
+                        'blush-pink': '#E4A3B4',
+                        'bg-light-pink': '#F7E5EC',
+                    },
+                    fontFamily: {
+                        heading: ['Space Mono', 'monospace'],
+                        body: ['DM Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased min-h-screen flex flex-col text-dark-contrast">
+    <header class="bg-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0">
+                <a href="index.html" class="block">
+                    <img src="Velvet&Blush2.png" alt="Velvet Blush Logo" class="h-20 w-auto">
+                </a>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xl font-heading">
+                <a href="index.html" class="hover:text-velvet-pink transition-colors duration-300">Início</a>
+                <a href="produtos.html" class="hover:text-velvet-pink transition-colors duration-300">Produtos</a>
+                <a href="quemsomos.html" class="hover:text-velvet-pink transition-colors duration-300">Quem Somos</a>
+                <a href="contato.html" class="hover:text-velvet-pink transition-colors duration-300">Contato</a>
+                <a href="cadastro.html" class="hover:text-velvet-pink transition-colors duration-300">Cadastro</a>
+            </nav>
+            <div class="flex items-center gap-4 mt-4 md:mt-0">
+                <a href="carrinho.html" class="text-gray-700 hover:text-velvet-pink transition-colors duration-300 relative">
+                    <i class="fas fa-shopping-bag text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <section class="bg-white rounded-3xl shadow-lg p-8 md:p-12 animate-fade-in border-4 border-blush-pink">
+            <h2 class="text-3xl md:text-5xl font-heading text-velvet-pink mb-6 text-center tracking-widest">Nossa Coleção Completa</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Card de Produto 1: Base Iluminadora -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="base.png" alt="Base Iluminadora Glow" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Base Iluminadora com Glow</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 129,90</p>
+                        <p class="text-gray-600 text-sm mb-4">Cobertura leve com um toque de brilho para um acabamento radiante. Ideal para o dia a dia.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 2: Paleta de Sombras -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="paleta.png" alt="Paleta de Sombras Essencial" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Paleta de Sombras Essencial</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 99,90</p>
+                        <p class="text-gray-600 text-sm mb-4">Tons neutros a cores vibrantes, crie makes infinitas com esta paleta versátil e pigmentada.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 3: Batom Matte -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="batom.png" alt="Batom Líquido Matte Velvet Red" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Batom Líquido Matte Velvet Red</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 59,90</p>
+                        <p class="text-gray-600 text-sm mb-4">Cor intensa e duradoura com acabamento matte, perfeita para um visual sofisticado e marcante.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 4: Iluminador Líquido -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="iluminador.png" alt="Iluminador Líquido Radiance" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Iluminador Líquido Radiance</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 75,00</p>
+                        <p class="text-gray-600 text-sm mb-4">Adicione um brilho sutil ou intenso à sua pele com este iluminador fácil de aplicar.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 5: Máscara de Cílios -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="rimel.png" alt="Máscara de Cílios Volume Extremo" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Máscara de Cílios Volume Extremo</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 49,90</p>
+                        <p class="text-gray-600 text-sm mb-4">Cílios volumosos e definidos para um olhar marcante. Fórmula de longa duração.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 6: Gloss Labial -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="gloss.png" alt="Gloss Labial Brilho Espelhado" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Gloss Labial Brilho Espelhado</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 39,90</p>
+                        <p class="text-gray-600 text-sm mb-4">Lábios com brilho intenso e efeito molhado. Hidratação e conforto para o dia todo.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 7: Delineador Líquido -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="delineador.png" alt="Delineador Líquido Preto Intenso" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Delineador Líquido Preto Intenso</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 65,00</p>
+                        <p class="text-gray-600 text-sm mb-4">Traço preciso e cor preta intensa para um delineado perfeito. Secagem rápida e longa duração.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+                <!-- Card de Produto 8: Pó Translúcido -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl border-2 border-blush-pink">
+                    <img src="po.png" alt="Pó Translúcido HD" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-heading text-velvet-pink mb-2 tracking-wide">Pó Translúcido HD Fixador</h3>
+                        <p class="text-velvet-pink font-body font-bold text-lg mb-3">R$ 85,00</p>
+                        <p class="text-gray-600 text-sm mb-4">Fixa a maquiagem, controla a oleosidade e minimiza poros para um acabamento impecável.</p>
+                        <a href="#" class="inline-block bg-velvet-pink text-white py-2 px-4 rounded-full font-heading hover:bg-blush-pink hover:text-velvet-pink transition-colors duration-300 w-full text-center">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blush-pink text-velvet-pink p-6 mt-auto">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Velvet Blush. Todos os direitos reservados.</p>
+                <p class="text-sm mt-1">Sua beleza, seu estilo.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-tiktok text-xl"></i></a>
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-pinterest text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

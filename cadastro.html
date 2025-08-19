@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Blush - Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'velvet-pink': '#B84A6A',
+                        'blush-pink': '#E4A3B4',
+                        'bg-light-pink': '#F7E5EC',
+                    },
+                    fontFamily: {
+                        heading: ['Space Mono', 'monospace'],
+                        body: ['DM Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased min-h-screen flex flex-col text-dark-contrast">
+    <header class="bg-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0">
+                <a href="index.html" class="block">
+                    <img src="Velvet&Blush2.png" alt="Velvet Blush Logo" class="h-20 w-auto">
+                </a>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xl font-heading">
+                <a href="index.html" class="hover:text-velvet-pink transition-colors duration-300">Início</a>
+                <a href="produtos.html" class="hover:text-velvet-pink transition-colors duration-300">Produtos</a>
+                <a href="quemsomos.html" class="hover:text-velvet-pink transition-colors duration-300">Quem Somos</a>
+                <a href="contato.html" class="hover:text-velvet-pink transition-colors duration-300">Contato</a>
+                <a href="cadastro.html" class="hover:text-velvet-pink transition-colors duration-300">Cadastro</a>
+            </nav>
+            <div class="flex items-center gap-4 mt-4 md:mt-0">
+                <a href="carrinho.html" class="text-gray-700 hover:text-velvet-pink transition-colors duration-300 relative">
+                    <i class="fas fa-shopping-bag text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <section class="bg-white rounded-3xl shadow-lg p-8 md:p-12 animate-fade-in border-4 border-blush-pink">
+            <h2 class="text-3xl md:text-5xl font-heading text-velvet-pink mb-6 text-center tracking-widest">Crie Sua Conta Velvet Blush</h2>
+            <p class="text-center text-gray-600 mb-6">Esta é uma versão estática. Este formulário não salva dados.</p>
+            <form class="max-w-xl mx-auto font-body">
+                <div class="mb-4">
+                    <label for="register-name" class="block text-gray-700 text-sm font-bold mb-2">Nome Completo:</label>
+                    <input type="text" id="register-name" name="name" class="shadow appearance-none border-2 border-blush-pink rounded-md w-full py-3 px-4 bg-gray-100 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-velvet-pink placeholder-gray-500" placeholder="Seu nome">
+                </div>
+                <div class="mb-4">
+                    <label for="register-email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="register-email" name="email" class="shadow appearance-none border-2 border-blush-pink rounded-md w-full py-3 px-4 bg-gray-100 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-velvet-pink placeholder-gray-500" placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="mb-6">
+                    <label for="register-password" class="block text-gray-700 text-sm font-bold mb-2">Senha:</label>
+                    <input type="password" id="register-password" name="password" class="shadow appearance-none border-2 border-blush-pink rounded-md w-full py-3 px-4 bg-gray-100 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-velvet-pink placeholder-gray-500" placeholder="********">
+                </div>
+                <div class="mb-6">
+                    <label for="register-confirm-password" class="block text-gray-700 text-sm font-bold mb-2">Confirmar Senha:</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" class="shadow appearance-none border-2 border-blush-pink rounded-md w-full py-3 px-4 bg-gray-100 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-velvet-pink placeholder-gray-500" placeholder="********">
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-velvet-pink text-white font-heading text-2xl py-3 px-8 rounded-full shadow-lg hover:bg-blush-pink hover:text-velvet-pink transition-all duration-300 transform hover:scale-105">
+                        Cadastrar
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blush-pink text-velvet-pink p-6 mt-auto">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Velvet Blush. Todos os direitos reservados.</p>
+                <p class="text-sm mt-1">Sua beleza, seu estilo.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-tiktok text-xl"></i></a>
+                <a href="#" class="text-velvet-pink hover:text-white transition-colors duration-300"><i class="fab fa-pinterest text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
